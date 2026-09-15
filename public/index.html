@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoclub - Catálogo de películas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>&#127916; Videoclub</h1>
+        <p>Catálogo de películas</p>
+    </header>
+
+    <main class="container">
+        <section class="panel">
+            <h2>Añadir película</h2>
+            <div class="form-row">
+                <input type="text" id="titulo" placeholder="Título (ej: Matrix)" maxlength="150">
+                <input type="number" id="anio" placeholder="Año (ej: 1999)" min="1888" max="2100">
+                <button class="btn-primary" id="btnAdd">Guardar película</button>
+            </div>
+            <div id="addStatus" class="status"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Películas</h2>
+            <div id="contador" class="contador"></div>
+            <div id="lista" class="grid"></div>
+            <div id="listStatus" class="status"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
